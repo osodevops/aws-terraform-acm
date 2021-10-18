@@ -1,0 +1,35 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: "AWS Certificate Manager Terraform module"
+
+# Short description of this project
+description: |-
+  AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates.
+
+# Canonical GitHub repo
+github_repo: osodevops/aws-terraform-module-acm
+
+# How to use this project
+usage: |-
+  Using AWS ACM to create an SSL certificate in a Public Zone
+  ### Requirements
+  - Route 53 public zone. https://aws.amazon.com/route53/
+
+
+# Example usage
+examples: |-
+  Follow this example
+  ```yaml
+      module "ca" {
+        source                  = "git::ssh://git@github.com/osodevops/aws-terraform-module-acm.git"
+        domain                  = var.domain # The domain of the zone
+        sub_domain              = var.sub_domain # Subdomain of the zone
+        ttl                     = var.ttl # Time to Live
+        common_tags             = var.common_tags
+      }
+  ```
