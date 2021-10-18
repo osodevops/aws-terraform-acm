@@ -16,7 +16,7 @@ github_repo: osodevops/aws-terraform-module-acm
 
 # How to use this project
 usage: |-
-Using AWS ACM to create an SSL certificate in a Public Zone
+  Using AWS ACM to create an SSL certificate in a Public Zone
   ### Requirements
   - Route 53 public zone. https://aws.amazon.com/route53/
 
